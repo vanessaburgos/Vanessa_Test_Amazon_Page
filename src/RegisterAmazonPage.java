@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.project.pom.Base;
+
 public class RegisterAmazonPage extends Base{
 	public RegisterAmazonPage(WebDriver driver) throws InterruptedException {
 		  super(driver);
