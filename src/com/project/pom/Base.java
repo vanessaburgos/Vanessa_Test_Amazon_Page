@@ -10,21 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
 	
-	protected WebDriver driver;
-	
-	public Base(WebDriver driver)
-	{
-		this.driver = driver;
-	}
-	
-	public WebDriver chromeDriverConection() 
-	{
-		String driverPath = ".\\driver\\chromedriver.exe";
-	    String chromeDriver = "webdriver.chrome.driver";
-	    System.setProperty(chromeDriver, driverPath);
-	    driver = new ChromeDriver();
-		return driver;
-	}
+	public WebDriver driver;
 	
 	public WebElement findElement(By locator)
 	{
@@ -54,7 +40,7 @@ public class Base {
 	public void click(By locator)
 	{
 		driver.findElement(locator).click();
-	}
+	} 
 	
 	public Boolean isDisplayed(By locator)
 	{
@@ -72,6 +58,5 @@ public class Base {
 	public void visit(String url)
 	{
 		driver.get(url);
-	}
-	
+	}	
 }
